@@ -1,0 +1,43 @@
+::root {
+    --primary-color: #1e2126;
+    --secondary-color: #ffffff;
+    --main-600: #5a6372;
+    --purple: #7447d3;
+    // Burger
+    --burger-color: #ffffff;
+    --nav-color: #242a32;
+}
+
+// Container
+$containerWidth: 990px;
+$containerPaddings: 15px;
+
+// Media sizes
+$pcScreen: 1920px;
+$laptopLargeScreen: 1440px;
+$laptopScreen: 1024px;
+$tabletScreen: 768px;
+$mobileLarge: 425px;
+$mobileSmall: 320px;
+
+// Colors
+$primaryColor: var(--primary-color, #1e2126);
+$secondaryColor: var(--secondary-color, #ffffff);
+$main-600: var(--main-600, #5a6372);
+$purple: var(--purple, #7447d3);
+// buger Colors
+$burgerColor: var(--burger-color, #ffffff);
+$navColor: var(--nav-color, #242a32);
+
+// Functions
+
+@function adapt($size, $screen) {
+    @return calc($size / $screen * 100vw);
+}
+
+// @function adaptMobile($size, $screen, $coef) {
+//     @return calc($size / $screen * $coef * 100vw);
+// }
+
+$primaryFont: Museo Sans Cyr;
+$secondaryFont: Neumann;

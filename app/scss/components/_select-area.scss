@@ -1,0 +1,36 @@
+.select-area {
+    position: relative;
+    &__content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    &__feedback-btn {
+        border: 1px solid #8f5bd7;
+    }
+    &__top-line {
+        max-width: 100%;
+    }
+}
+
+.change-area {
+    margin-top: 66px;
+    padding: 22px 0;
+    max-width: 100%;
+    text-align: center;
+    border: 1px solid $main-600;
+
+    &__name {
+        font-family: $secondaryFont;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 120%;
+        color: $secondaryColor;
+    }
+}
+
+.area-scheme {
+    max-width: 100%;
+}

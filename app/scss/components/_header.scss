@@ -1,0 +1,66 @@
+.header {
+    padding-top: 32px;
+    &__inner {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        &-link {
+            text-decoration: none;
+            font-size: 18px;
+            color: $primaryColor;
+            transition: all 0.2s ease;
+            &:hover {
+                color: gray;
+            }
+        }
+    }
+    &__logo {
+        display: flex;
+        gap: 15px;
+        text-decoration: none;
+        align-items: center;
+        @media screen and (max-width: 450px) {
+            gap: 8px;
+        }
+    }
+}
+.feedback {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-end;
+    &__phone-link {
+        margin-top: 15px;
+        text-decoration: none;
+        color: $secondaryColor;
+        font-family: Museo Sans Cyr;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 100%;
+        text-align: left;
+
+        @media screen and (max-width: 450px) {
+            font-size: 16px;
+        }
+    }
+
+    &__text {
+        color: $secondaryColor;
+        font-family: Museo Sans Cyr;
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+.logo__text {
+    text-transform: uppercase;
+    font-family: Museo Sans Cyr;
+    color: $secondaryColor;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 90%;
+    @media screen and (max-width: 450px) {
+        font-size: 20px;
+    }
+}

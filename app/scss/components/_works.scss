@@ -1,0 +1,19 @@
+.primary-section {
+    position: relative;
+    &__container {
+        padding: 140px $containerPaddings;
+        &-bordered {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50.5%);
+            z-index: -5;
+        }
+    }
+}
+.our-works__container {
+    padding: 140px 15px 0 15px;
+}
+.works-bottom-line {
+    max-width: 100%;
+}

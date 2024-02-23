@@ -1,0 +1,121 @@
+.footer {
+    padding: 40px 0 64px 0;
+    background-color: #16191d;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+    }
+    &__line {
+        max-width: 100%;
+        height: 2px;
+        background-color: $purple;
+    }
+    &__content {
+        margin-top: 64px;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: 940px) {
+            flex-direction: column-reverse;
+            align-items: normal;
+            gap: 50px;
+        }
+    }
+
+    &__info {
+        max-width: 325px;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 32px;
+        column-gap: 40px;
+    }
+}
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    &__name {
+        font-family: $primaryFont;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        color: #FFF;
+    }
+
+    &__text {
+        font-family: $primaryFont;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        color: $secondaryColor;
+    }
+}
+.page-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    &__item {
+        font-family: $primaryFont;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        color: $secondaryColor;
+        text-decoration: none;
+    }
+}
+.social-media-links {
+    max-width: 100%;
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.mini-calc {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 24px;
+    padding: 8px 16px 8px 8px;
+    background-color: #1e2126;
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        @media screen and (max-width: 505px) {
+            &-text {
+                gap: 5px;
+            }
+            &-price {
+                flex-direction: column;
+            }
+        }
+    }
+    &__text {
+        font-family: $primaryFont;
+        font-weight: 300;
+        font-size: 18px;
+        color: $secondaryColor;
+    }
+
+    &__price {
+        font-family: $secondaryFont;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        letter-spacing: 0.08em;
+        color: $secondaryColor;
+    }
+
+    @media screen and (max-width: 924px) {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
